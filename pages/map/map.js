@@ -2,8 +2,8 @@
 let schoolData = require('../../resources/gis-school')
 Page({
   data: {
-    centerX:113.3245211,
-    centerY:23.10229,
+    centerX:null,
+    centerY:null,
     markers: [],
     // polyline: [{
     //   points: [{
@@ -42,11 +42,11 @@ Page({
           console.log(res)
             let latitude = res.latitude; 
             let longitude = res.longitude; 
-            let marker=this.createMarker(res);
+            let schoolMarkers = this.getSchoolMarkers();
             this.setData({
                 centerX:longitude,
                 centerY:latitude,
-                markers:this.getSchoolMarkers()
+                markers:schoolMarkers
             })
         }
     });
@@ -78,7 +78,7 @@ Page({
     let marker= {
       iconPath: "/image/location.png",
       id:point.id || 0,
-      name:point.name || '',
+      title:point.name || '',
       latitude: latitude,
       longitude: longitude,
       width: 25,
