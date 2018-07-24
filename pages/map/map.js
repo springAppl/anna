@@ -1,22 +1,10 @@
 // map.js
-let schoolData = require('../../resources/gis-school')
+let schoolData = require('../../resources/shops.js')
 Page({
   data: {
     centerX:null,
     centerY:null,
     markers: [],
-    // polyline: [{
-    //   points: [{
-    //     longitude: 113.3245211,
-    //     latitude: 23.10229
-    //   }, {
-    //     longitude: 113.324520,
-    //     latitude: 23.21229
-    //   }],
-    //   color:"#FF0000DD",
-    //   width: 2,
-    //   dottedLine: true
-    // }],
     controls: [{
       id: 1,
       iconPath: '/image/location-control.png',
@@ -76,13 +64,13 @@ Page({
     let latitude = point.latitude; 
     let longitude = point.longitude; 
     let marker= {
-      iconPath: "/image/location.png",
+      iconPath: "/image/mapPoint.png",
       id:point.id || 0,
       title:point.name || '',
       latitude: latitude,
       longitude: longitude,
-      width: 25,
-      height: 48
+      width: 19,
+      height: 33
     };
     return marker;
   }

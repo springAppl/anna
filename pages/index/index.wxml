@@ -1,10 +1,10 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{appInfo.logoUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{appInfo.title}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class='b'>
+    <navigator class="item {{(index + 1) % 2 == 0 ? 'item-b' : ''}}" wx:for="{{snacks}}" wx:for-item="item" wx:for-index="index" wx:key="{{item.id}}">
+      <image class="img" src="{{item.list_pic_url}}" background-size="cover"></image>
+      <text class="name">{{item.name}}</text>
+      <text class="price">￥{{item.retail_price}}</text>
+    </navigator>
   </view>
 </view>

@@ -1,0 +1,25 @@
+.item {
+  height: 50px;
+  margin-bottom: 8px;
+  background-color: white;
+}
+.item_image {
+  width: 56px;
+  height: 48px;
+  padding-left: 8px;
+  float: left
+}
+image {
+  width: 48px;
+  height: 48px; 
+}
+.item_info {
+  overflow:hidden;
+}
+.item_title {
+text-align: left;
+color:#404040;
+}
+.item_title {
+  padding-left: 8px;
+}
