@@ -1,82 +1,76 @@
-.container{
-    background: #f9f9f9;
-    padding: 0rpx 0;
+/**index.wxss**/
+
+.container-out {
+  height: 600rpx;
+  width: 650rpx;
+  background-color: #b136b9;
+  margin: 100rpx auto;
+  border-radius: 40rpx;
+  box-shadow: 0 10px 0 #871a8e;
+  position: relative;
 }
 
-.cate-item{
-    margin-top: 94rpx;
-    height: auto;
-    overflow: hidden;
+.container-in {
+  width: 580rpx;
+  height: 530rpx;
+  background-color: #871a8e;
+  border-radius: 40rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
- .h{
-    height: 145rpx;
-    width: 750rpx;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+/**小圆球
+box-shadow: inset 3px 3px 3px #fff2af;*/
 
- .h .name{
-    display: block;
-    height: 35rpx;
-    margin-bottom: 18rpx;
-    font-size: 30rpx;
-    color: #333;
-}
-
-.h .desc{
-    display: block;
-    height: 24rpx;
-    font-size: 24rpx;
-    color: #999;
-}
-
- .b{
-  width: 750rpx;
-  padding: 0 6.25rpx;
-  height: auto;
-  overflow: hidden;
-}
-
-.b .item{
-  float: left;
-  background: #fff;
-  width: 365rpx;
-  margin-bottom: 6.25rpx;
-  padding-bottom: 33.333rpx;
-  height: auto;
-  overflow: hidden;
-  text-align: center;
-}
-
- .b .item-b{
-  margin-left: 6.25rpx;
-}
-
- .item .img{
-  width: 302rpx;
-  height: 302rpx;
-}
-
- .item .name{
+.circle {
+  position: absolute;
   display: block;
-  width: 365.625rpx;
-  height: 35rpx;
-  margin: 11.5rpx 0 22rpx 0;
-  text-align: center;
-  overflow: hidden;
-  padding: 0 20rpx;
-  font-size: 30rpx;
-  color: #333;
+  border-radius: 50%;
+  height: 20rpx;
+  width: 20rpx;
 }
 
- .item .price{
-  display: block;
-  width: 365.625rpx;
-  height: 30rpx;
+.content-out {
+  position: absolute;
+  height: 150rpx;
+  width: 166.6666rpx;
+  background-color: #f5f0fc;
+  border-radius: 15rpx;
+  box-shadow: 0 5px 0 #d87fde;
+}
+
+/**居中 加粗*/
+
+.start-btn {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 15rpx;
+  height: 150rpx;
+  width: 166.6666rpx;
+  background-color: #ffe400;
+  box-shadow: 0 5px 0 #e7930a;
+  color: #f6251e;
   text-align: center;
-  font-size: 30rpx;
-  color: #b4282d;
+  font-size: 55rpx;
+  font-weight: bolder;
+  line-height: 150rpx;
+}
+
+.award-image {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 140rpx;
+  width: 130rpx;
 }

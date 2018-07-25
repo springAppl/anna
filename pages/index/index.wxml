@@ -1,10 +1,11 @@
-<!-- index.wxml -->
-<view class="container">
-  <view class='b'>
-    <navigator class="item {{(index + 1) % 2 == 0 ? 'item-b' : ''}}" wx:for="{{snacks}}" wx:for-item="item" wx:for-index="index" wx:key="{{item.id}}">
-      <image class="img" src="{{item.list_pic_url}}" background-size="cover"></image>
-      <text class="name">{{item.name}}</text>
-      <text class="price">￥{{item.retail_price}}</text>
-    </navigator>
+
+<!--index.wxml-->
+<view class="container-out">
+  <view class="circle" wx:for="{{circleList}}" style="top:{{item.topCircle}}rpx;left:{{item.leftCircle}}rpx;background-color: {{(index%2==0)?colorCircleFirst:colorCircleSecond}};"></view>
+  <view class="container-in">
+    <view class="content-out" wx:for="{{awardList}}" style="top:{{item.topAward}}rpx;left:{{item.leftAward}}rpx;background-color: {{(index==indexSelect)?colorAwardSelect:colorAwardDefault}};">
+      <image class="award-image" src="{{item.imageAward}}"></image>
+    </view>
+    <view class="start-btn" bindtap="startGame" style=" background-color:{{isRunning?'#e7930a':'#ffe400'}}">START</view>
   </view>
 </view>

@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/map/map",
     "pages/shop/index/index",
+    "pages/shop/detail/detail",
     "pages/mine/mine"
   ],
   "tabBar": {
@@ -10,26 +11,24 @@
     "selectedColor": "#3cc51f",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
-    "list": [{
+    "list": [
+      {
       "pagePath": "pages/index/index",
-      "iconPath": "image/snacks.png",
-      "selectedIconPath": "image/snacksHL.png",
-      "text": "推荐"
-    },{
+      "iconPath": "image/prize.png",
+      "selectedIconPath": "image/prizeHL.png"
+    },
+    {
       "pagePath": "pages/map/map",
       "iconPath": "image/map.png",
-      "selectedIconPath": "image/mapHL.png",
-      "text": "地图"
+      "selectedIconPath": "image/mapHL.png"
     },{
       "pagePath": "pages/shop/index/index",
       "iconPath": "image/shop.png",
-      "selectedIconPath": "image/shopHL.png",
-      "text": "店铺"
+      "selectedIconPath": "image/shopHL.png"
     },{
       "pagePath": "pages/mine/mine",
       "iconPath": "image/mine.png",
-      "selectedIconPath": "image/mineHL.png",
-      "text": "我的"
+      "selectedIconPath": "image/mineHL.png"
     }]
   },
   "window":{

@@ -1,8 +1,8 @@
 <view class="container" style="flex-direction:column;">
     <block wx:for="{{shops}}" wx:key="item.id">
-        <navigator class="item" >
+        <navigator class="item" url="/pages/shop/detail/detail?locationDetail={{item.locationDetail}}&logo={{item.logo}}&phone={{item.phone}}&longitude={{item.longitude}}&latitude={{item.latitude}}&workTime={{item.workTime}}" extra-data="{{item}}">
             <view class="item_image">
-                        <image class="img" src="{{item.logo ? item.logo:'/image/defaultShop.png'}}" background-size="cover" alt="{{item.name}}"></image>
+                <image class="img" src="{{item.logo ? item.logo:'/image/defaultShop.png'}}" background-size="cover" alt="{{item.name}}"></image>
             </view>
             <view class="item_info">
               <view class='item_title'>
@@ -10,6 +10,9 @@
               {{item.name}}
               </text>
               </view>
+            </view>
+            <view class="item_arrow">
+                <image src="/image/arrow.png" style="width:10px;height:10px;" />
             </view>
         </navigator>
     </block>

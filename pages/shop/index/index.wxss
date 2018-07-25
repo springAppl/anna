@@ -1,3 +1,7 @@
+.container {
+  padding-top: 8px;
+  padding-bottom: 0.1px;
+}
 .item {
   height: 50px;
   margin-bottom: 8px;
@@ -14,12 +18,25 @@ image {
   height: 48px; 
 }
 .item_info {
-  overflow:hidden;
+  height: 100%;
+  float: left;
 }
 .item_title {
 text-align: left;
 color:#404040;
+width: 200px;
 }
 .item_title {
   padding-left: 8px;
+}
+.item_arrow {
+  height: 100%;
+  float:right;
+  margin-right:20px;
+  -webkit-display:flex;
+  display:flex;
+  -webkit-align-items:center;
+  align-items:center;
+  -webkit-justify-content:center;
+  justify-content:center;
 }
