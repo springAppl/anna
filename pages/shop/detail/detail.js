@@ -5,9 +5,9 @@ Page({
   data: {
     snacks: snacksData,
     imgUrls: [
-      '/image/milk/01.jpg',
-      '/image/milk/02.jpg',
-      '/image/milk/03.jpg'
+      '/image/milk/04.jpg',
+      '/image/milk/05.jpg',
+      '/image/milk/06.jpg'
     ],
     indicatorDots: true,
     autoplay: true,

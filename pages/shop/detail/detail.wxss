@@ -30,7 +30,7 @@ image {
 }
 .itemSwiper {
   width: 100%;
-  height: 120px;
+  height: 150px;
   -webkit-display: flex;
   display: flex;
   -webkit-align-items: center;

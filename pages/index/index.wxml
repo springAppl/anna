@@ -1,7 +1,25 @@
 <view class='container'>
-  <view class='swiper'></view>
-  <view class='category'></view>
-  <view class='article' wx:if="{{false}}">文章</view>
+  <view class='swiper'>
+  </view>
+  <view class='category'>
+    <view class='categoryItem'>
+      <image src='/image/drink/drink.jpg'></image>
+      <span style='text-align:center;'>酒</span>
+    </view>
+    <view class='categoryItem'>
+      <image src='/image/milk/milk.jpg'></image>
+      <span>奶制品</span>
+    </view>
+    <view class='categoryItem'>
+      <image src='/image/meat/meat.jpg'></image>
+      <span>肉类</span>
+    </view>
+    <view class='categoryItem'>
+      <image src='/image/suit/suit.jpg'></image>
+      <span>衣服</span>
+    </view>
+  </view>
+  <view class='article'></view>
   <view class='topic'></view>
   <view class='topic'></view>
 </view>
