@@ -19,7 +19,20 @@
       <span>衣服</span>
     </view>
   </view>
-  <view class='article'></view>
-  <view class='topic'></view>
-  <view class='topic'></view>
+  <view class='choice'>
+    <span>为你精选</span>
+    <view class='items'>
+            <block wx:for="{{choiceGoods}}" wx:key="item.id">
+            <view class='item'>
+              <image src='{{item.image}}'></image>
+              <view class='name'>
+                <span>{{item.name}}</span>
+              </view>
+              <view class='price'>
+                <span>￥{{item.price}}</span>
+              </view>
+            </view>
+        </block>
+    </view>
+  </view>
 </view>

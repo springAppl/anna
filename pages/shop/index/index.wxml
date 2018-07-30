@@ -1,6 +1,6 @@
 <view class="container" style="flex-direction:column;">
     <block wx:for="{{shops}}" wx:key="item.id">
-        <navigator class="item" url="/pages/shop/detail/detail?locationDetail={{item.locationDetail}}&logo={{item.logo}}&phone={{item.phone}}&longitude={{item.longitude}}&latitude={{item.latitude}}&workTime={{item.workTime}}" extra-data="{{item}}">
+        <navigator class="item" url="/pages/shop/detail/detail?id={{item.id}}" extra-data="{{item}}">
             <view class="item_image">
                 <image class="img" src="{{item.logo ? item.logo:'/image/defaultShop.png'}}" background-size="cover" alt="{{item.name}}"></image>
             </view>

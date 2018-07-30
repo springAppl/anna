@@ -81,13 +81,53 @@ box-shadow: inset 3px 3px 3px #fff2af;*/
   display: flex;
   flex-direction: row;
   justify-content: center;
-   align-items: center;
+  align-items: center;
+  width: 100%;
 }
 .categoryItem {
-  width: 70px;
   height: 80px;
 }
+.categoryItem span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
 image{
-  width: 60px;
+  width: 187rpx;
   height: 60px;
+}
+.choice{
+  width: 100%;
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+}
+.choice .items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.choice .item {
+  height: 250px;
+  width: 375rpx;
+  padding: 8px;
+}
+.choice .item image {
+  width: 132px;
+  height: 132px;
+}
+.item .name {
+  height: 48px;
+}
+.item .price {
+  margin-top: 8px;
+}
+.item .price span{
+  font-size: 15px;
+  color: red;
+  font-weight: 600;
+  line-height: 26px;
 }

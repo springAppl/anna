@@ -14,8 +14,8 @@
     "list": [
       {
       "pagePath": "pages/index/index",
-      "iconPath": "image/prize.png",
-      "selectedIconPath": "image/prizeHL.png"
+      "iconPath": "image/snacks.png",
+      "selectedIconPath": "image/snacksHL.png"
     },
     {
       "pagePath": "pages/map/map",
