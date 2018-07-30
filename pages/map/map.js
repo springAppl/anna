@@ -44,6 +44,9 @@ Page({
   },
   markertap(e) {
     console.log(e)
+    wx.navigateTo({
+      url: '/pages/shop/detail/detail?id=' + e.markerId,
+    });
   },
   controltap(e) {
     console.log(e.controlId)
@@ -66,11 +69,20 @@ Page({
     let marker= {
       iconPath: "/image/mapPoint.png",
       id:point.id || 0,
-      title:point.name || '',
+      // title:point.name || '',
       latitude: latitude,
       longitude: longitude,
       width: 19,
-      height: 33
+      height: 33,
+      callout: {
+        content: point.name,
+        color: "#b5b1b1",
+        fontSize: 12,
+        borderRadius: 15,
+        bgColor: "#262930",
+        padding: 1,
+        display: 'ALWAYS'
+      }
     };
     return marker;
   }

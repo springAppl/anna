@@ -1,5 +1,5 @@
 <view class="container" style="flex-direction:column;">
-  <view>
+  <view class='shopDetail'>
     <view class="item" bindtap="openLocation">
       <view>
         <image src="/image/map.png" style="width:20px;height:20px;" />
@@ -26,7 +26,7 @@
       </view>
     </view>
   </view>
-  <view>
+  <view class='itemSwiper'>
         <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
         <block wx:for="{{imgUrls}}" wx:key="{{item}}">
           <swiper-item>

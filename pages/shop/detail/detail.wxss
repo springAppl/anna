@@ -28,6 +28,19 @@ image {
   -webkit-justify-content: center;
   justify-content: center;
 }
+.itemSwiper {
+  width: 100%;
+  height: 120px;
+  -webkit-display: flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+swiper {
+  width: 100%;
+}
 
 .item .arrow {
   float: right;

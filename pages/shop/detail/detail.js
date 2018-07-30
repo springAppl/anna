@@ -1,12 +1,13 @@
 //location.js
-let snacksData = require('../../../resources/snacks.js')
+let snacksData = require('../../../resources/snacks.js');
+let shops = require('../../../resources/shops.js');
 Page({
   data: {
     snacks: snacksData,
     imgUrls: [
-      'http://yanxuan.nosdn.127.net/65091eebc48899298171c2eb6696fe27.jpg',
-      'http://yanxuan.nosdn.127.net/bff2e49136fcef1fd829f5036e07f116.jpg',
-      'http://yanxuan.nosdn.127.net/8e50c65fda145e6dd1bf4fb7ee0fcecc.jpg'
+      '/image/milk/01.jpg',
+      '/image/milk/02.jpg',
+      '/image/milk/03.jpg'
     ],
     indicatorDots: true,
     autoplay: true,
@@ -14,13 +15,20 @@ Page({
     duration: 500
   },
   onLoad: function (option) {
+    var shop = null;
+    for (var ele in shops) {
+      if (shops[ele].id == option.id) {
+        shop = shops[ele];
+        break;
+      }
+    }
     this.setData({
-      locationDetail: option.locationDetail,
-      logo: option.logo,
-      phone: option.phone,
-      longitude: option.longitude,
-      latitude: option.latitude,
-      workTime: option.workTime
+      locationDetail: shop.locationDetail,
+      logo: shop.logo,
+      phone: shop.phone,
+      longitude: shop.longitude,
+      latitude: shop.latitude,
+      workTime: shop.workTime 
     });
   },
   openLocation: function(){

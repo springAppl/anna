@@ -1,7 +1,7 @@
 <view class='container'>
   <view class='swiper'></view>
   <view class='category'></view>
-  <view class='article'></view>
+  <view class='article' wx:if="{{false}}">文章</view>
   <view class='topic'></view>
   <view class='topic'></view>
 </view>
