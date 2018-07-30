@@ -20,7 +20,6 @@
     </view>
   </view>
   <view class='choice'>
-    <span>为你精选</span>
     <view class='items'>
             <block wx:for="{{choiceGoods}}" wx:key="item.id">
             <view class='item'>
