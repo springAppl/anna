@@ -1,0 +1,32 @@
+/* components/hotitems/hotitems.wxss */
+.container {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap
+}
+.item {
+  width: 375rpx;
+  height: 250px;
+  padding: 20rpx;
+}
+.item image {
+  width: 335rpx;
+  height: 150px;
+}
+.item .description {
+  width: 355rpx;
+  height: 48px;
+  font-weight: 600;
+}
+.item .bottom {
+  width: 100%;
+}
+.item .bottom span {
+  margin: 5px;
+  font-size: 15px;
+  color: red;
+  font-weight: 600;
+  line-height: 26px;
+}

@@ -1,1 +1,6 @@
-{}
+{
+    "usingComponents": {
+      "hotitems": "/components/hotitems/hotitems",
+      "category": "/components/category/category"
+    }
+}

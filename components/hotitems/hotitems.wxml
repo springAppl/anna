@@ -1,0 +1,12 @@
+<!--components/hotitems/hotitems.wxml-->
+<view class='container'>
+<block wx:for="{{content.items}}" wx:key="{{item.id}}" >
+<view class='item'>
+<image src="{{item.image}}"></image>
+<text class='description'>{{item.name}}</text>
+<view class='.bottom'>
+<span>￥{{item.price}}</span>
+</view>
+</view>
+</block>
+</view>

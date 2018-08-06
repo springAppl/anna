@@ -1,0 +1,8 @@
+  <view class='category'>
+    <block wx:for="{{content.categories}}" wx:key="{{item.id}}">
+    <view class='categoryItem'>
+      <image src="{{item.image}}"></image>
+      <span style='text-align:center;'>{{item.name}}</span>
+    </view>
+    </block>
+  </view>
