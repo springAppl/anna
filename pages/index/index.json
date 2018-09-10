@@ -1,6 +1,7 @@
 {
     "usingComponents": {
       "hotitems": "/components/hotitems/hotitems",
-      "category": "/components/category/category"
+      "category": "/components/category/category",
+      "mirror": "/components/mirror/mirror"
     }
 }
