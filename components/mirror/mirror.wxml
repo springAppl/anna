@@ -1,2 +1,2 @@
 <!--components/mirror/mirror.wxml-->
-<text>mirror, mirror, who is the most beautiful</text>
+<image src='/image/clock.png' bindtap='previewImage'></image>
