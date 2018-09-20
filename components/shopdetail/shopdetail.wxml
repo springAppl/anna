@@ -1,0 +1,27 @@
+  <view class='shopDetail'>
+    <view class="item" bindtap="openLocation">
+      <view>
+        <image src="/image/map.png" style="width:20px;height:20px;" />
+      </view>
+      <view>{{shop.locationDetail}}</view>
+      <view class='arrow'>
+        <image src="/image/arrow.png" style="width:10px;height:10px;" />
+      </view>
+    </view>
+    <view class='item'>
+      <view>
+        <image src="/image/clock.png" style="width:20px;height:20px;" />
+      </view>
+      <view>
+        {{shop.workTime}}
+      </view>
+    </view>
+    <view class='item'>
+      <view>
+        <image src="/image/phone.png" style="width:20px;height:20px;" />
+      </view>
+      <view>
+        {{shop.phone}}
+      </view>
+    </view>
+  </view>

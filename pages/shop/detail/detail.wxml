@@ -1,40 +1,11 @@
+<import src="/components/category/index.wxml"/>
+<import src="/components/hotitems/index.wxml"/>
+<import src="/components/mirror/index.wxml"/>
+<import src="/components/shopdetail/index.wxml"/>
+<import src="/components/featureswiper/index.wxml"/>
 <view class="container" style="flex-direction:column;">
-  <view class='shopDetail'>
-    <view class="item" bindtap="openLocation">
-      <view>
-        <image src="/image/map.png" style="width:20px;height:20px;" />
-      </view>
-      <view>{{locationDetail}}</view>
-      <view class='arrow'>
-        <image src="/image/arrow.png" style="width:10px;height:10px;" />
-      </view>
-    </view>
-    <view class='item'>
-      <view>
-        <image src="/image/clock.png" style="width:20px;height:20px;" />
-      </view>
-      <view>
-        {{workTime}}
-      </view>
-    </view>
-    <view class='item'>
-      <view>
-        <image src="/image/phone.png" style="width:20px;height:20px;" />
-      </view>
-      <view>
-        {{phone}}
-      </view>
-    </view>
-  </view>
-  <view class='itemSwiper'>
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-      <block wx:for="{{imgUrls}}" wx:key="{{item}}">
-        <swiper-item>
-          <image src="{{item}}" class="slide-image" />
-        </swiper-item>
-      </block>
-    </swiper>
-  </view>
+  <shopdetail shopID="{{shopID}}"/>
+  <featureswiper/>
   <view class='b'>
     <navigator class="item {{(index + 1) % 2 == 0 ? 'item-b' : ''}}" wx:for="{{snacks}}" wx:for-item="item" wx:for-index="index" wx:key="{{item.id}}">
       <image class="img" src="{{item.list_pic_url}}" background-size="cover"></image>

@@ -2,6 +2,7 @@
     "usingComponents": {
       "hotitems": "/components/hotitems/hotitems",
       "category": "/components/category/category",
-      "mirror": "/components/mirror/mirror"
+      "mirror": "/components/mirror/mirror",
+      "shopdetail": "/components/shopdetail/shopdetail"
     }
 }

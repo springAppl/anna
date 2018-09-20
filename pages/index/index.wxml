@@ -1,9 +1,10 @@
 <import src="/components/category/index.wxml"/>
 <import src="/components/hotitems/index.wxml"/>
 <import src="/components/mirror/index.wxml"/>
+<import src="/components/shopdetail/index.wxml"/>
 <view class='container'>
-  <!-- <block wx:for="{{components}}" wx:key="{{item.id}}">
+  <block wx:for="{{components}}" wx:key="{{item.id}}">
       <template is="{{item.typeId}}" data="{{content: item.content}}"/>
-  </block> -->
-  <template is="mirror"/>
+  </block>
+  <!-- <template is="mirror"/> -->
 </view>

@@ -5,7 +5,6 @@ Page({
   },
   onLoad: function () {
     let that = this;
-    console.log(api.baseURL);
     wx.request({
       url: api.baseURL + 'index',
       success: function(res){

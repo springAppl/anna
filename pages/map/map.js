@@ -1,5 +1,6 @@
 // map.js
-let schoolData = require('../../resources/shops.js')
+// let schoolData = require('../../resources/shops.js')
+const api = require('../../config/config.js');
 Page({
   data: {
     centerX:null,
@@ -15,28 +16,34 @@ Page({
         height: 40
       },
       clickable: true
-    }]
+    }],
+    schoolData: null
   },
   onReady: function (e) {
     // 使用 wx.createMapContext 获取 map 上下文 
     this.mapCtx = wx.createMapContext('myMap')
   },
   onLoad: function () {
-    console.log('地图定位！')
-    let that = this
+    let that = this;
     wx.getLocation({
         type: 'gcj02', //返回可以用于wx.openLocation的经纬度
         success:(res)=>{
-          console.log(res)
             let latitude = res.latitude; 
             let longitude = res.longitude; 
-            let schoolMarkers = this.getSchoolMarkers();
             this.setData({
                 centerX:longitude,
-                centerY:latitude,
-                markers:schoolMarkers
+                centerY:latitude
             })
         }
+    });
+    wx.request({
+      url: api.baseURL + 'shop/all',
+      success: function (res) {
+        console.log(that.getSchoolMarkers(res.data));
+        that.setData({
+          markers: that.getSchoolMarkers(res.data)
+        });
+      }
     });
   },
   regionchange(e) {
@@ -52,9 +59,9 @@ Page({
     console.log(e.controlId)
     this.moveToLocation()
   },
-  getSchoolMarkers(){
+  getSchoolMarkers(shops){
     let markers=[];
-    for(let item of schoolData){
+    for(let item of shops){
       let marker=this.createMarker(item);
       markers.push(marker)
     }

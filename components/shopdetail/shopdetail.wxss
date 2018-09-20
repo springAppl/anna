@@ -1,0 +1,26 @@
+/* components/shopdetail/shopdetail.wxss */
+.item {
+  width: 100%;
+  height: 30px;
+}
+
+.logo {
+  height: 70px;
+}
+
+.item  view {
+  height: 100%;
+  margin-left: 10px;
+  float: left;
+  -webkit-display: flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.item .arrow {
+  float: right;
+  margin-right: 20px;
+}
