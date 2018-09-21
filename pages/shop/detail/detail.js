@@ -1,10 +1,11 @@
 //location.js
-let snacksData = require('../../../resources/snacks.js');
 const api = require('../../../config/config.js');
 Page({
   data: {
-    snacks: snacksData,
-    shopID: null
+    shopID: null,
+    content: {
+      items: null
+    }
   },
   onLoad: function (option) {
     let that = this;
@@ -30,5 +31,15 @@ Page({
         });
       }
     });
+    wx.request({
+      url: api.baseURL + 'item/shop/' + option.id,
+      success: function(res) {
+        that.setData({
+          content: {
+            items: res.data
+          }
+        });
+      }
+    })
   }
 })

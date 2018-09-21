@@ -6,11 +6,12 @@
 <view class="container" style="flex-direction:column;">
   <shopdetail shopID="{{shopID}}"/>
   <featureswiper/>
-  <view class='b'>
+  <hotitems content="{{content}}"></hotitems>
+  <!-- <view class='b'>
     <navigator class="item {{(index + 1) % 2 == 0 ? 'item-b' : ''}}" wx:for="{{snacks}}" wx:for-item="item" wx:for-index="index" wx:key="{{item.id}}">
       <image class="img" src="{{item.list_pic_url}}" background-size="cover"></image>
       <text class="name">{{item.name}}</text>
       <text class="price">￥{{item.retail_price}}</text>
     </navigator>
-  </view>
+  </view> -->
 </view>
