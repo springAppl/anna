@@ -4,7 +4,7 @@ Page({
   data: {
     shopID: null,
     content: {
-      items: null
+      components: null
     }
   },
   onLoad: function (option) {
@@ -32,14 +32,13 @@ Page({
       }
     });
     wx.request({
-      url: api.baseURL + 'item/shop/' + option.id,
+      url: api.baseURL + 'shop-detail/' + option.id,
       success: function(res) {
         that.setData({
-          content: {
-            items: res.data
-          }
+          components: res.data
         });
+        console.log();
       }
-    })
+    });
   }
 })
